@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+div, header, footer, main, section {border: 1px solid black;}
+/* body 태그에 flex 설정 
+== 화면을 나누는 큰 영역을 유연하게 배치 */
+body{
+  display: flex;
+  flex-direction:column;
+  min-height: 100vh;
+} 
+
+/* 헤더 부분 */
+header{
+  height: 60px;
+  display: flex;
+}
+/* 교차축 (세로) 방향 align-items : stretch; (기본값) 
+  설정되어 있기 때문에 height : 100% 작성 안해도된다*/
+
+.header-1{width: 100px;}
+.header-2{width: 50px;}
+.header-1{flex-grow: 1;}
+/* 메인부분 */
+main{
+  background-color: #831414;
+  /* 나머지 item이 0, main 혼자 1-> 혼자늘어나는 남은 화면 다 채움 */
+  flex-grow: 1; /* 팽창 */
+  display: flex;
+  flex-direction: column;
+}
+.content-1{ height: 290px;}
+.content-2{ height: 160px;}
+.content-3{ flex-grow: 1; }
+
+
+
+/* 푸터 부분 */
+footer{
+  height: 100px;
+}
+
+/* footer > section{height: 50%;} */
+.footer-1{
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-1 > section:first-child{
+  width: 30%;
+}
+.footer-1 > section:last-child{
+  width: 30%;
+}
+
+
+.footer-2{
+  height: 50%;
+}

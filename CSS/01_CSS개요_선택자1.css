@@ -1,0 +1,74 @@
+/* css 파일은 <style> 태그 내부라고 생각 */
+
+/* 아이디가 테스트1인 요소를 선택 */
+
+
+#test1{
+  color: blueviolet;   /* 컬러 색 지정*/
+  font-weight: bold;  /* 글자 굵기 지정 */
+  font-size: 20;  /* 글자 크기 지정 */
+}
+
+
+
+
+/* id(#) 선택자 */
+
+#li1 {background-color: #36BA98;}
+
+#li2 {background-color: #E76F51;}
+
+#li3 {background-color: #667BC6;}
+
+
+
+/* 태그 선택자 */
+strong{
+  font-size: 18px;
+  font-family: '고딕';
+  color: #A0937D;
+}
+
+code{
+  background-color: #4161d4;
+  display: block;
+  font-weight: bold;
+}
+
+/* class(.) 선택자 */
+
+.class-test1{
+  background-color: black;
+  color: white;
+}
+
+.class-test2{
+  background-color: yellow;
+  color: red;
+}
+
+
+
+/* 한 요소에 클래스 작성하기 */
+.bg-green {
+  background-color: green;
+}
+.font-pink{
+  color: pink;
+}
+
+/* 웹 폰트 적용 */
+@font-face {
+  font-family: 'Ownglyph_JAEGEONSA-Rg';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_JAEGEONSA-Rg.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* 모든 요소(*) 선택자  */
+
+* {
+  /* 모든 요소 글꼴 변경 */
+  font-family: 'Ownglyph_JAEGEONSA-Rg';
+}
